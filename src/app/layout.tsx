@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter_Tight, Poppins } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 import "./globals.css";
 
 const interTight = Inter_Tight({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interTight.variable} antialiased`} style="background: var(--background); color: var(--foreground);">
+      <body className={`${interTight.variable} antialiased`} style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
         {children}
       </body>
     </html>
